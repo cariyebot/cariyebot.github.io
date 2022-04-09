@@ -213,3 +213,15 @@ body {
     text-align: center !important;
     color: #a2a8bd !important
 }
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
