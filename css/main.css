@@ -84,7 +84,6 @@ body {
     background-size: 200% !important;
     background-repeat: no-repeat !important;
     display: inline-block;
-    font-size: 44px;
     animation: float 5s ease-in-outinfinite;
 }
 .features .title {
