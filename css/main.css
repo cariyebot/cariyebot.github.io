@@ -83,7 +83,6 @@ body {
     background-position: bottom !important;
     background-size: 200% !important;
     background-repeat: no-repeat !important;
-    animation: float 5s ease-in-outinfinite;
 }
 .features .title {
     font-size: 40px !important;
@@ -98,22 +97,18 @@ body {
 
 .features .card-body {
     text-align: left !important;
-    animation-delay: 2s;
 }
 
 .features .card-title {
     margin: 0 0 -3px !important;
-    animation-delay: 2s;
 }
 .cards {
     margin-top: 30px !important;
-    animation-delay: 2s;
 }
 
 .card {
     border-radius: 5px !important;
     box-shadow: none !important;
-    animation-delay: 2s;
 }
 
 .card-title {
