@@ -111,6 +111,10 @@ body {
     animation: revealText .5s forwards;
 }
 
+.card-text {
+    animation-delay: .175s;
+}
+
 @keyframes revealText {
     from{
         transform: translateY(20px);
