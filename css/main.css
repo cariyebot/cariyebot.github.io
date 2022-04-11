@@ -21,13 +21,6 @@ body {
      font-weight: bold !important;
  }
 
- .login-btn {
-     border: 2px solid #AD91FF !important;
-     font-size: 10px !important;
- }
- .login-btn:hover {
-     background: #AD91FF !important;
- }
 .navbar {
     box-shadow: none !important
 }
@@ -115,6 +108,17 @@ body {
     font-size: 28px !important;
     font-weight: 600 !important;
     color: #AD91FF !important;
+    animation: revealText .5s forwards;
+}
+
+@keyframes revealText {
+    from{
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .statistics {
@@ -205,16 +209,4 @@ body {
 .footer .bot-footer {
     text-align: center !important;
     color: #a2a8bd !important
-}
-
-@keyframes float {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-15px);
-    }
-    100%{
-        transform: translateY(0);
-    }
 }
