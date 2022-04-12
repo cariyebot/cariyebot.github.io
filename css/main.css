@@ -95,6 +95,11 @@ body {
 .features .card-title {
     margin: 0 0 -3px !important;
 }
+
+.features .card-text {
+    color: rgba(255, 255, 255, 0.46) !important
+}
+
 .cards {
     margin-top: 30px !important;
 }
@@ -109,6 +114,10 @@ body {
     font-weight: 600 !important;
     color: #AD91FF !important;
     animation: revealText .5s forwards;
+}
+
+.card-text {
+    color: rgba(255, 255, 255, 0.46) !important
 }
 
 @keyframes revealText {
@@ -172,9 +181,6 @@ body {
     background: #1D1E28;
     border-radius: 22px !important;
     border: 4px solid #AD91FF;
-}
-.features .card-text {
-    color: rgba(255, 255, 255, 0.46) !important
 }
 
 .features .card-body {
