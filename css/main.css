@@ -111,10 +111,6 @@ body {
     animation: revealText .5s forwards;
 }
 
-.card-text {
-    animation-delay: .175s !important;
-}
-
 @keyframes revealText {
     from{
         transform: translateY(20px);
@@ -179,7 +175,6 @@ body {
 }
 .features .card-text {
     color: rgba(255, 255, 255, 0.46) !important
-    animation-delay: .175s; !important
 }
 
 .features .card-body {
