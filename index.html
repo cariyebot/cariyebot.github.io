@@ -126,38 +126,39 @@
             </div><br />
         </div>
     </div>
-	<script type="text/javascript">
-		document.getElementById("copyright-year").innerHTML = (new Date()).getFullYear();
-		fetch("https://discordapp.com/api/guilds/829333851162935306/widget.json").then(async res => {
-			let widget = await res.json();
-			for (const channel of widget.channels) {
-				document.getElementById(`stats-${channel.name.toLowerCase().split(":")[0].replace(/ /g, "-")}`).innerHTML = channel.name.split(":")[1];
-			}
-		});
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-		const crate = new Crate({
-		  server: "829333851162935306",
-		  channel: "829333851162935309",
-		  shard: "https://e.widgetbot.io",
-		  css: `
-		    .root .embed {
-		      width: ${window.mobilecheck() ? "100%" : "50%"};
-		    }
-		  `,
-		  notifications: true,
-		  indicator: true
-		});
-		crate.notify({
-		  content: "Need help? Join the support server to receive assistance!",
-		  timeout: 10000,
-		  avatar: "images/cheesits456-42.gif"
-		})
-	</script>
+    <script type="text/javascript" src="js/mobileCheck.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/now-ui-kit.min.js"></script>
 </body>
+<script type="text/javascript">
+	document.getElementById("copyright-year").innerHTML = (new Date()).getFullYear();
+	fetch("https://discordapp.com/api/guilds/829333851162935306/widget.json").then(async res => {
+		let widget = await res.json();
+		for (const channel of widget.channels) {
+			document.getElementById(`stats-${channel.name.toLowerCase().split(":")[0].replace(/ /g, "-")}`).innerHTML = channel.name.split(":")[1];
+		}
+	});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+	const crate = new Crate({
+		 server: "829333851162935306",
+		 channel: "829333851162935309",
+		 shard: "https://e.widgetbot.io",
+		 css: `
+		   .root .embed {
+		     width: ${window.mobilecheck() ? "100%" : "50%"};
+		   }
+		 `,
+		 notifications: true,
+		 indicator: true
+	});
+	crate.notify({
+		 content: "Need help? Join the support server to receive assistance!",
+		 timeout: 10000,
+		 avatar: "images/cheesits456-42.gif"
+	})
+</script>
 
 </html>
