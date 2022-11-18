@@ -9,17 +9,17 @@ body {
     font-size: 16px;
 }
 
-::-webkit-scrollbar-track {
+:: -webkit-scrollbar-track {
     background: purple;
     border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb {
+:: -webkit-scrollbar-thumb {
     background: purple;
     border-radius: 5px;
 }
 
-::-webkit-scrollbar {
+:: -webkit-scrollbar {
     background: #2C2F33;
     border-radius: 5px
 }
